@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abubaker.differentbutton.MainActivity"
+    android:background="@color/backroundColor">
+
+    <Button
+        android:layout_width="@dimen/setWidth"
+        android:layout_height="wrap_content"
+        android:text="Launch Map"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/buttonMap"
+        android:background="@color/buttonColor"
+        android:onClick="process"
+        />
+
+    <Button
+        android:layout_width="@dimen/setWidth"
+        android:layout_height="wrap_content"
+        android:text="Launch Market"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonMap"
+        android:layout_margin="25dp"
+        android:background="@color/buttonColor"
+        android:id="@+id/buttonMarket"
+        android:onClick="process"
+        />
+
+      <Button
+          android:layout_width="@dimen/setWidth"
+          android:layout_height="wrap_content"
+          android:text="Send Email"
+          android:layout_centerHorizontal="true"
+          android:layout_below="@id/buttonMarket"
+          android:background="@color/buttonColor"
+          android:id="@+id/buttonSend"
+          android:onClick="process"/>
+
+</RelativeLayout>
